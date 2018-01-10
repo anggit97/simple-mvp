@@ -1,6 +1,6 @@
-package com.anggitprayogo.mvpmarkidok.Login.Presenter;
+package com.anggitprayogo.mvpmarkidok.login.Presenter;
 
-import com.anggitprayogo.mvpmarkidok.Login.View.LoginView;
+import com.anggitprayogo.mvpmarkidok.login.View.LoginView;
 
 /**
  * Created by Anggit on 09/01/2018.
@@ -22,7 +22,7 @@ public class LoginPresenterImpl implements LoginPresenter{
             if (username.equals("admin") && password.equals("admin")){
                 loginView.loginSucces();
             }else{
-                loginView.loginError();
+                loginView.loginError(username+" - "+password);
             }
         }
     }

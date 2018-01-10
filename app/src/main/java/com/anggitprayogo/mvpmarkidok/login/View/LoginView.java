@@ -1,4 +1,4 @@
-package com.anggitprayogo.mvpmarkidok.Login.View;
+package com.anggitprayogo.mvpmarkidok.login.View;
 
 /**
  * Created by Anggit on 09/01/2018.
@@ -10,5 +10,5 @@ public interface LoginView {
 
     void loginSucces();
 
-    void loginError();
+    void loginError(String result);
 }
